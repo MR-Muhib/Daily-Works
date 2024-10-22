@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 30%;
+  height: 20rem;
+  background-color: #333;
+  box-shadow: 2px 4px 4px gray;
+  position: fixed;
+  left: -250px;
+  color: white;
+}
+.sidebar.active {
+  left: 0;
+}

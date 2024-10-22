@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    width: 100%;
+    height: 100lvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  p {
+    margin: 0 auto;
+    font-size: 2rem;
+    /* font-weight: bold; */
+    /* font-style: italic; */
+
+  }
+</style>
+
+<body>
+  <div>
+    <p id="text">Hello world</p>
+    <button onclick="HandleBold()">B</button>
+    <button onclick="HandleItalic()">I</button>
+    <button onclick="HandleUnderline()">U</button>
+    <select id="selecttor" onchange="changeFontSize()">
+
+    </select>
+  </div>
+
+  <script>
+    const decs = document.querySelector("p")
+    const selectElement = document.querySelector("#selecttor");
+    for (let i = 8; i <= 100; i++) {
+      const option = document.createElement("option")
+      option.value = i;
+      option.textContent = i; // Set the text to
+      selectElement.appendChild(option);
+    }
+
+    // Change font Size
+
+    const changeFontSize = () => {
+      const selectValues = selectElement.value;
+      const textElement = document.querySelector("#text");
+      if (selectValues) {
+        textElement.style.fontSize = `${selectValues}px`
+      } else {
+        textElement.style.fontSize = "initial"; // Reset if no value is selected
+      }
+    }
+
+
+    const HandleBold = () => {
+
+      if (decs.style.fontWeight === "bold") {
+        decs.style.fontWeight = "normal";
+      } else {
+        decs.style.fontWeight = "bold";
+      }
+    }
+
+    const HandleItalic = () => {
+
+      if (decs.style.fontStyle === "italic") {
+        decs.style.fontStyle = "normal"
+      } else {
+        decs.style.fontStyle = "italic"
+      }
+    }
+
+    const HandleUnderline = () => {
+      if (decs.style.textDecoration === "underline") {
+        decs.style.textDecoration = "none"
+      } else {
+        decs.style.textDecoration = "underline"
+      }
+    }
+
+
+  </script>
+
+
+</body>
+
+</html>
