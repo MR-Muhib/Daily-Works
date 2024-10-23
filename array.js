@@ -141,3 +141,27 @@
 //     console.log(array);
 //   }
 // }
+
+// const display = [1, 2, 3, 4, 5, 6];
+// const arr = ["+", "-", "*", "/"];
+// const isSymbol = arr.includes(); // reatun boolean
+// const temp = display.slice(0, display.length - 1);
+// if(!isSymbol) 
+
+// console.log(isSymbol);
+// console.log(temp);
+
+// const appendToDisplaySimble = (symbol) => {
+//   const isSymbol = arr.includes(display.value[display.value.length - 1]);
+//   const temp = display.value.slice(0, display.value.length - 1) + symbol;
+
+//   if (!isSymbol) {
+//     display.value = display.value + symbol;
+//   } else {
+//     display.value = temp;
+//   }
+// };
+
+//  const adfrr = ()=> {
+
+//  }
