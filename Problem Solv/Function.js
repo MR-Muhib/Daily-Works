@@ -82,22 +82,22 @@
 
 // console.log(result);
 
-// function findShortestWord(sentence) {
-//   let cleanSecntence = sentence.replace(/[^\w\s]/g, "");
-//   let word = cleanSecntence.split(" ");
+/* function findShortestWord(sentence) {
+  let cleanSecntence = sentence.replace(/[^\w\s]/g, "");
+  let word = cleanSecntence.split(" ");
 
-//   let sortWords = word[0];
-//   for (let i = 1; i < word.length; i++) {
-//     if (word[i].length < sortWords.length) {
-//       sortWords = word[i];
-//     }
-//   }
-//   return sortWords;
-// }
-// const result = findShortestWord("Hello world");
-// const result2 = findShortestWord("The quick brown fox jumps over the lazy dog");
-// const result3 = findShortestWord("Today is Monday");
-// console.log(result, result2, result3);
+  let sortWords = word[0];
+  for (let i = 1; i < word.length; i++) {
+    if (word[i].length < sortWords.length) {
+      sortWords = word[i];
+    }
+  }
+  return sortWords;
+}
+const result = findShortestWord("Hello world");
+const result2 = findShortestWord("The quick brown fox jumps over the lazy dog");
+const result3 = findShortestWord("Today is Monday");
+console.log(result, result2, result3); */
 
 // Problem 7:
 
@@ -385,3 +385,39 @@ printTriangle(5); */
 //   }
 // }
 // printTriangle(5);
+
+// const array = ["Happy", "Hello", "Bangladesh"];
+
+// function findLongest() {
+//   let longestWord = "";
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i].length > longestWord.length) longestWord = array[i];
+//   }
+//   return longestWord;
+// }
+
+// console.log(findLongest());
+
+// let obj = { name: "John", age: 30, city: "New York" };
+
+// function printObject(obj) {
+//   for (const key in obj) {
+//     console.log(key, obj[key]);
+//   }
+// }
+
+// printObject(obj);
+
+// arr CRUD operations;
+
+// const arr = [
+//   { name: "John", age: 30 },
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 35 },
+//   { name: "Charlie", age: 28 },
+//   { name: "David", age: 32 },
+// ];
+
+// const result = arr.filter((item) => item.name !== "John");
+
+// console.log(result);
